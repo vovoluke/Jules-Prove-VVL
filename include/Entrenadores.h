@@ -1,0 +1,21 @@
+#ifndef ENTRENADORES_H
+#define ENTRENADORES_H
+
+#include "Hash.h"
+#include "IteradorEntrenadores.h"
+
+class Entrenadores {
+private:
+    Hash* tabla;
+
+public:
+    Entrenadores();
+    ~Entrenadores();
+    void insert(Entrenador*);
+    bool member(std::string);
+    Entrenador* find(std::string);
+    void listarEntrenadores(IteradorEntrenadores&);
+    void cantEntrenadoresPostAnioAndPromedioSalario(int, int&, float&);
+};
+
+#endif // ENTRENADORES_H
