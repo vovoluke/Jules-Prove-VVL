@@ -9,10 +9,12 @@ private:
         Socio* socio;
         Nodo* sig;
     };
+    Nodo* inicio;
     Nodo* actual;
 
 public:
     IteradorSocios();
+    ~IteradorSocios();
     void insertar(Socio*);
     bool hayMasSocios();
     Socio* proximoSocio();

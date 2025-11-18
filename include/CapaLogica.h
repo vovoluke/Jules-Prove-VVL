@@ -12,6 +12,7 @@ private:
 
 public:
     CapaLogica();
+    ~CapaLogica();
     void registrarEntrenador(Entrenador*, tipoError&);
     void registrarSocio(Socio*, long int, tipoError&);
     void listarEntrenadores(IteradorEntrenadores&);
@@ -21,7 +22,7 @@ public:
     float calcularTotalMesSocios(int);
     int cantBecadosDespuesFecha(Fecha);
     void cantEntrenadoresAndPromedioSalarios(int, int&, float&);
-    void socioConMayorCuota(long int, IteradorSocios&);
+    void socioConMayorCuota(int, IteradorSocios&);
 };
 
 #endif // CAPALOGICA_H

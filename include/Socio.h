@@ -7,18 +7,19 @@
 class Socio : public Persona {
 private:
     float cuotaBase;
-    std::string domicilio;
+    String domicilio;
     Entrenador* entrenador;
 
 public:
     Socio();
     ~Socio();
-    Socio(long int, std::string, float, std::string, Entrenador*);
+    Socio(long int, String, float, String, Entrenador*);
     float getCuotaBase();
-    std::string getDomicilio();
+    String getDomicilio();
     Entrenador* getEntrenador();
+    void setEntrenador(Entrenador*);
     virtual float cuotaMensual() = 0; // Pure virtual function
-    std::string tipoPersona() override;
+    String tipoPersona() override;
 };
 
 #endif // SOCIO_H

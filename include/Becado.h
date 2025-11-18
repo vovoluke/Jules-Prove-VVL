@@ -12,9 +12,10 @@ private:
 public:
     Becado();
     ~Becado();
-    Becado(long int, std::string, float, std::string, Entrenador*, float, Fecha);
+    Becado(long int, String, float, String, Entrenador*, float, Fecha);
     float getPorcentaje();
     Fecha getFechaOtorgada();
+    void setFechaOtorgada(Fecha);
     float cuotaMensual() override;
 };
 

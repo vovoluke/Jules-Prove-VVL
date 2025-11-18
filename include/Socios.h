@@ -16,6 +16,8 @@ public:
     Socio* find(long int);
     void listarSocios(IteradorSocios&);
     float cuotaMensualSocio(int, long int);
+    float calcularTotalMesSocios(int); // Nueva función
+    Socio* socioConMayorCuota(int); // Nueva función
     float cuotaMasAlta();
     int cantBecadosDespuesFecha(Fecha);
 };

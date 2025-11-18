@@ -1,20 +1,20 @@
 #ifndef PERSONA_H
 #define PERSONA_H
 
-#include <string>
+#include "String.h"
 
 class Persona {
 private:
     long int cedula;
-    std::string nombre;
+    String nombre;
 
 public:
     Persona();
     virtual ~Persona();
-    Persona(long int, std::string);
+    Persona(long int, String);
     long int getCedula();
-    std::string getNombre();
-    virtual std::string tipoPersona() = 0; // Pure virtual function
+    String getNombre();
+    virtual String tipoPersona() = 0; // Pure virtual function
 };
 
 #endif // PERSONA_H

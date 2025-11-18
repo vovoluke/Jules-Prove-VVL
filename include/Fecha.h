@@ -16,6 +16,7 @@ public:
     int getAnio();
     bool operator==(const Fecha&);
     bool operator<(const Fecha&);
+    bool operator>(const Fecha&);
     Fecha operator++();
     Fecha operator++(int);
     Fecha operator+(int);

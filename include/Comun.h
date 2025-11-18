@@ -10,7 +10,7 @@ private:
 public:
     Comun();
     ~Comun();
-    Comun(long int, std::string, float, std::string, Entrenador*, float);
+    Comun(long int, String, float, String, Entrenador*, float);
     float getExtra();
     float cuotaMensual() override;
 };

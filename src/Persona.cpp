@@ -1,7 +1,15 @@
 #include "../include/Persona.h"
 
-Persona::Persona() {}
+Persona::Persona() : cedula(0), nombre("") {}
+
 Persona::~Persona() {}
-Persona::Persona(long int cedula, std::string nombre) {}
-long int Persona::getCedula() { return 0; }
-std::string Persona::getNombre() { return ""; }
+
+Persona::Persona(long int ci, String n) : cedula(ci), nombre(n) {}
+
+long int Persona::getCedula() {
+    return cedula;
+}
+
+String Persona::getNombre() {
+    return nombre;
+}

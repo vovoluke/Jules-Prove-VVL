@@ -12,10 +12,11 @@ private:
 public:
     Entrenador();
     ~Entrenador();
-    Entrenador(long int, std::string, float, Fecha);
+    Entrenador(long int, String, float, Fecha);
     float getSalarioBase();
     Fecha getAnioComienzo();
-    std::string tipoPersona() override;
+    void setAnioComienzo(Fecha);
+    String tipoPersona() override;
 };
 
 #endif // ENTRENADOR_H
