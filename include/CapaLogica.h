@@ -18,15 +18,12 @@ public:
     void registrarSocio(Socio*, long int, tipoError&);
     void listarEntrenadores(IteradorPersonas&);
     void listarSocios(IteradorPersonas&);
-    void listarEntrenadores(IteradorEntrenadores&);
-    void listarSocios(IteradorSocios&);
     Socio* listarSocio(long int);
     float calcularMontoMesSocio(int, long int);
     float calcularTotalMesSocios(int);
     int cantBecadosDespuesFecha(Fecha);
     void cantEntrenadoresAndPromedioSalarios(int, int&, float&);
     void socioConMayorCuota(int, IteradorPersonas&);
-    void socioConMayorCuota(int, IteradorSocios&);
 };
 
 #endif // CAPALOGICA_H
