@@ -16,7 +16,7 @@ Entrenador* Entrenadores::find(long int cedula) {
     return tabla->find(cedula);
 }
 
-void Entrenadores::listarEntrenadores(IteradorEntrenadores& iter) {
+void Entrenadores::listarEntrenadores(IteradorPersonas& iter) {
     tabla->inOrder([&iter](Entrenador* e) {
         iter.insertar(e);
     });

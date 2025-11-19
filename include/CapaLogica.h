@@ -4,6 +4,7 @@
 #include "Socios.h"
 #include "Entrenadores.h"
 #include "tipoError.h"
+#include "IteradorPersonas.h"
 
 class CapaLogica {
 private:
@@ -15,6 +16,8 @@ public:
     ~CapaLogica();
     void registrarEntrenador(Entrenador*, tipoError&);
     void registrarSocio(Socio*, long int, tipoError&);
+    void listarEntrenadores(IteradorPersonas&);
+    void listarSocios(IteradorPersonas&);
     void listarEntrenadores(IteradorEntrenadores&);
     void listarSocios(IteradorSocios&);
     Socio* listarSocio(long int);
@@ -22,6 +25,7 @@ public:
     float calcularTotalMesSocios(int);
     int cantBecadosDespuesFecha(Fecha);
     void cantEntrenadoresAndPromedioSalarios(int, int&, float&);
+    void socioConMayorCuota(int, IteradorPersonas&);
     void socioConMayorCuota(int, IteradorSocios&);
 };
 

@@ -2,7 +2,7 @@
 #define SOCIOS_H
 
 #include "ABB.h"
-#include "IteradorSocios.h"
+#include "IteradorPersonas.h"
 
 class Socios {
 private:
@@ -14,7 +14,7 @@ public:
     bool member(long int);
     void insert(Socio*);
     Socio* find(long int);
-    void listarSocios(IteradorSocios&);
+    void listarSocios(IteradorPersonas&);
     float cuotaMensualSocio(int, long int);
     float calcularTotalMesSocios(int); // Nueva función
     Socio* socioConMayorCuota(int); // Nueva función

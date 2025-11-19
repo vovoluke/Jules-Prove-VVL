@@ -21,7 +21,7 @@ Socio* Socios::find(long int cedula) {
     return arbol->find(cedula);
 }
 
-void Socios::listarSocios(IteradorSocios& iter) {
+void Socios::listarSocios(IteradorPersonas& iter) {
     arbol->inOrder([&iter](Socio* s) {
         iter.insertar(s);
     });

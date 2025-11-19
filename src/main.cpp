@@ -51,17 +51,17 @@ int main() {
     if (error == OK) std::cout << "Socio 'Ana Lopez' registrada." << std::endl;
 
     std::cout << "\n--- Listando Entrenadores ---" << std::endl;
-    IteradorEntrenadores itE;
+    IteradorPersonas itE;
     logica.listarEntrenadores(itE);
-    while (itE.hayMasEntrenadores()) {
-        imprimirEntrenador(itE.proximoEntrenador());
+    while (itE.hayMasPersonas()) {
+        imprimirEntrenador(dynamic_cast<Entrenador*>(itE.proximaPersona()));
     }
 
     std::cout << "\n--- Listando Socios ---" << std::endl;
-    IteradorSocios itS;
+    IteradorPersonas itS;
     logica.listarSocios(itS);
-    while (itS.hayMasSocios()) {
-        imprimirSocio(itS.proximoSocio());
+    while (itS.hayMasPersonas()) {
+        imprimirSocio(dynamic_cast<Socio*>(itS.proximaPersona()));
     }
 
     std::cout << "\n--- Buscando Socio 101 ---" << std::endl;

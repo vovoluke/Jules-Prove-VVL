@@ -29,9 +29,9 @@ Fecha::Fecha(int d, int m, int a) : dia(d), mes(m), anio(a) {
 
 Fecha::Fecha(const Fecha& otra) : dia(otra.dia), mes(otra.mes), anio(otra.anio) {}
 
-int Fecha::getDia() { return dia; }
-int Fecha::getMes() { return mes; }
-int Fecha::getAnio() { return anio; }
+int Fecha::getDia() const { return dia; }
+int Fecha::getMes() const { return mes; }
+int Fecha::getAnio() const { return anio; }
 
 bool Fecha::esValida() {
     if (anio < 0 || mes < 1 || mes > 12 || dia < 1) {

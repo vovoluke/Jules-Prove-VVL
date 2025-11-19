@@ -41,12 +41,12 @@ void CapaLogica::registrarSocio(Socio* socio, long int cedulaEntrenador, tipoErr
 }
 
 // Requerimiento 3
-void CapaLogica::listarEntrenadores(IteradorEntrenadores& iter) {
+void CapaLogica::listarEntrenadores(IteradorPersonas& iter) {
     diccioEntrenadores->listarEntrenadores(iter);
 }
 
 // Requerimiento 4
-void CapaLogica::listarSocios(IteradorSocios& iter) {
+void CapaLogica::listarSocios(IteradorPersonas& iter) {
     diccioSocios->listarSocios(iter);
 }
 
@@ -76,7 +76,7 @@ void CapaLogica::cantEntrenadoresAndPromedioSalarios(int anio, int& cant, float&
 }
 
 // Requerimiento 10
-void CapaLogica::socioConMayorCuota(int mes, IteradorSocios& iter) {
+void CapaLogica::socioConMayorCuota(int mes, IteradorPersonas& iter) {
     Socio* s = diccioSocios->socioConMayorCuota(mes);
     if (s) {
         iter.insertar(s);

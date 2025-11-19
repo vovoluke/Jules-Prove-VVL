@@ -11,9 +11,9 @@ public:
     Fecha();
     Fecha(int, int, int);
     Fecha(const Fecha&);
-    int getDia();
-    int getMes();
-    int getAnio();
+    int getDia() const;
+    int getMes() const;
+    int getAnio() const;
     bool operator==(const Fecha&);
     bool operator<(const Fecha&);
     bool operator>(const Fecha&);
